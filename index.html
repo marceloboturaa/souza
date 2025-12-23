@@ -5,35 +5,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcelo Botura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="avatar-marcelobotura.jpg" alt="Foto de Perfil" class="profile-pic">
-            <h1>Marcelo Botura</h1>
-            <h3><i class="fi fi-sr-marker"></i>Foz do Iguaçu</h3>
+    <div class="welcome-overlay" id="welcomeOverlay">
+        <div class="welcome-card">
+            <div class="welcome-ring">
+                <div class="welcome-video">
+                    <iframe title="Boas-vindas" src="https://www.youtube.com/embed/Bl5ZybQoB5E?autoplay=1&mute=1&playsinline=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=Bl5ZybQoB5E" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p class="welcome-text">Boas-vindas! Tocando um hi-res curto antes de entrar.</p>
+            <button class="welcome-skip" id="welcomeSkip">Entrar agora</button>
         </div>
-        <ul class="link-list">
-            <li><a href="https://github.com/marcelobotura" rel="set">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/marceloboturaa/" target="_blank" rel="external">Linkedin</a></li>
-            <li><a href="http://lattes.cnpq.br/2713638217454852" target="_blank" rel="external">Lattes</a></li>     
-            <li><a href="http://be.net/marceloboturaa" target="_blank" rel="external">Behance</a></li>
-            <li><a href="https://www.instagram.com/marceloboturaa/" target="_blank" rel="external">Instagram</a></li>
-            <li><a href="https://www.facebook.com/marceloboturaa/" target="_blank" rel="external">Facebook</a></li>
-            <li><a href="https://marceloboturaa.blogspot.com/" target="_blank" rel="external">Blogger</a></li>
-        </ul> 
+    </div>
 
-<!--
-<ul class="projetinhos">
-    <h2>Portifólio</h2>
-    <li><a href="https://marcelobotura.github.io/CursinhoPreVestibular/index.html" title="Site do Cusrsinho" target="_blank" rel="external">Cursinho Pré Vestibular</a></li>
-    <li><a href="https://marcelobotura.github.io/Ingresso/" title="Projetinho de checar  ingressos" target="_blank" rel="external">Check-in Ingressos</a></li>
-    <li><a href="https://marcelobotura.github.io/cursoemvideo-html5/" title="Conclusão do curso HTM5, CSS3 e JS" target="_blank" rel="external">Google Glass</a></li>
-  </ul>
-    </div>-->
-   
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <main class="page">
+        <header class="hero">
+            <div class="hero-left">
+                <div class="hero-avatar">
+                    <img src="avatar-marcelo-boturaa.jpg" alt="Foto de perfil de Marcelo Botura">
+                    <span class="hero-badge">online</span>
+                </div>
+                <div class="hero-text">
+                    <p class="eyebrow">criador &middot; multi-plataforma</p>
+                    <h1>Marcelo Botura</h1>
+                    <p class="location"><i class="fi fi-sr-marker"></i>Foz do Igua&ccedil;u, Brasil</p>
+                    <div class="hero-actions">
+                        <a id="heroCta" class="hero-cta" href="https://www.youtube.com/@marceloboturaa" target="_blank" rel="noopener noreferrer"><i class="fi fi-brands-youtube"></i> Assistir agora</a>
+                        <a class="hero-ghost" href="http://lattes.cnpq.br/2713638217454852" target="_blank" rel="noopener noreferrer"><i class="fi fi-sr-graduation-cap"></i> Curr&iacute;culo</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="links-section">
+            <div class="section-head">
+                <h2>Plataformas</h2>
+            </div>
+            <ul class="link-grid modern">
+                <li>
+                    <a class="link-card accent-video platform-youtube" href="https://www.youtube.com/@marceloboturaa" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-brands-youtube"></i></span>
+                        <div class="text">
+                            <span class="title">YouTube</span>
+                            <span class="subtitle">Canal principal e shorts</span>
+                        </div>
+                        <span class="pill">v&iacute;deo</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-card accent-video platform-costv" href="https://cos.tv/channel/16766314741409792/" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-sr-tv-retro"></i></span>
+                        <div class="text">
+                            <span class="title">Cos.TV</span>
+                            <span class="subtitle">Lives e reprises</span>
+                        </div>
+                        <span class="pill">v&iacute;deo</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-card accent-video platform-rumble" href="https://rumble.com/user/marceloboturaa" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-sr-play"></i></span>
+                        <div class="text">
+                            <span class="title">Rumble</span>
+                            <span class="subtitle">Transmiss&otilde;es e cortes</span>
+                        </div>
+                        <span class="pill">v&iacute;deo</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-card accent-video platform-dailymotion" href="https://www.dailymotion.com/marceloboturaa" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-brands-dailymotion"></i></span>
+                        <div class="text">
+                            <span class="title">Dailymotion</span>
+                            <span class="subtitle">Clipes selecionados</span>
+                        </div>
+                        <span class="pill">v&iacute;deo</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-card accent-social platform-linkedin" href="https://www.linkedin.com/in/marceloboturaa/" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-brands-linkedin"></i></span>
+                        <div class="text">
+                            <span class="title">LinkedIn</span>
+                            <span class="subtitle">Experi&ecirc;ncia e contatos</span>
+                        </div>
+                        <span class="pill">social</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-card accent-social platform-instagram" href="https://www.instagram.com/marceloboturaa/" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-brands-instagram"></i></span>
+                        <div class="text">
+                            <span class="title">Instagram</span>
+                            <span class="subtitle">Stories e bastidores</span>
+                        </div>
+                        <span class="pill">social</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-card accent-social platform-facebook" href="https://www.facebook.com/marceloboturaa/" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-brands-facebook"></i></span>
+                        <div class="text">
+                            <span class="title">Facebook</span>
+                            <span class="subtitle">Comunidade e posts</span>
+                        </div>
+                        <span class="pill">social</span>
+                    </a>
+                </li>
+                    <li>
+                    <a class="link-card accent-knowledge platform-lattes" href="http://lattes.cnpq.br/2713638217454852" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-sr-graduation-cap"></i></span>
+                        <div class="text">
+                            <span class="title">Lattes</span>
+                            <span class="subtitle">Curr&iacute;culo acad&ecirc;mico</span>
+                        </div>
+                        <span class="pill">perfil</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-card accent-social platform-blogger" href="https://marceloboturaa.blogspot.com/" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-brands-blogger"></i></span>
+                        <div class="text">
+                            <span class="title">Blogger</span>
+                            <span class="subtitle">Artigos e not&iacute;cias</span>
+                        </div>
+                        <span class="pill">blog</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="link-card accent-build platform-pinterest" href="https://br.pinterest.com/marceloboturaa/" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-brands-pinterest"></i></span>
+                        <div class="text">
+                            <span class="title">Pinterest</span>
+                            <span class="subtitle">Refer&ecirc;ncias</span>
+                        </div>
+                        <span class="pill">inspira&ccedil;&atilde;o</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-card accent-build platform-behance" href="https://www.behance.net/marceloboturaa" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-brands-behance"></i></span>
+                        <div class="text">
+                            <span class="title">Behance</span>
+                            <span class="subtitle">Design e identidade</span>
+                        </div>
+                        <span class="pill">design</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a class="link-card accent-build platform-github" href="https://github.com/marceloboturaa" target="_blank" rel="noopener noreferrer">
+                        <span class="icon-box"><i class="fi fi-brands-github"></i></span>
+                        <div class="text">
+                            <span class="title">GitHub</span>
+                            <span class="subtitle">Projetos e c&oacute;digo</span>
+                        </div>
+                        <span class="pill">tech</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </section>
+    </main>
+    <script>
+        (() => {
+            const overlay = document.getElementById('welcomeOverlay');
+            const skipBtn = document.getElementById('welcomeSkip');
+            const welcomeKey = 'welcomeSeen';
+            const welcomeFrame = overlay ? overlay.querySelector('iframe') : null;
+            const welcomeDuration = 12000;
+            const heroCta = document.getElementById('heroCta');
+
+            const closeWelcome = () => {
+                if (!overlay) return;
+                overlay.classList.remove('show');
+                localStorage.setItem(welcomeKey, '1');
+                if (welcomeFrame) {
+                    welcomeFrame.src = '';
+                }
+            };
+
+            if (overlay && !localStorage.getItem(welcomeKey)) {
+                overlay.classList.add('show');
+                const timer = setTimeout(closeWelcome, welcomeDuration);
+                if (skipBtn) {
+                    skipBtn.addEventListener('click', () => {
+                        clearTimeout(timer);
+                        closeWelcome();
+                    });
+                }
+            } else if (overlay) {
+                overlay.remove();
+            }
+
+            // Rotaciona CTA principal entre plataformas de vídeo a cada 10s, com animação
+            const videoPlatforms = [
+                {
+                    label: 'Assistir no YouTube',
+                    href: 'https://www.youtube.com/@marceloboturaa',
+                    icon: 'fi fi-brands-youtube'
+                },
+                {
+                    label: 'Assistir no Cos.TV',
+                    href: 'https://cos.tv/channel/16766314741409792/',
+                    icon: 'fi fi-sr-tv-retro'
+                },
+                {
+                    label: 'Assistir no Rumble',
+                    href: 'https://rumble.com/user/marceloboturaa',
+                    icon: 'fi fi-sr-play'
+                },
+                {
+                    label: 'Assistir no Dailymotion',
+                    href: 'https://www.dailymotion.com/marceloboturaa',
+                    icon: 'fi fi-brands-dailymotion'
+                }
+            ];
+
+            let ctaIndex = 0;
+
+            const applyCta = (index) => {
+                if (!heroCta) return;
+                const platform = videoPlatforms[index % videoPlatforms.length];
+                heroCta.href = platform.href;
+                heroCta.innerHTML = `<i class="${platform.icon}"></i> ${platform.label}`;
+                heroCta.classList.remove('cta-swap');
+                // força reflow para reiniciar animação
+                void heroCta.offsetWidth;
+                heroCta.classList.add('cta-swap');
+            };
+
+            if (heroCta && videoPlatforms.length) {
+                applyCta(ctaIndex);
+                setInterval(() => {
+                    ctaIndex = (ctaIndex + 1) % videoPlatforms.length;
+                    applyCta(ctaIndex);
+                }, 10000);
+            }
+
+            // Stagger de entrada para os cards de plataformas
+            const cards = Array.from(document.querySelectorAll('.link-card'));
+            cards.forEach((card, idx) => {
+                setTimeout(() => {
+                    card.classList.add('reveal');
+                }, idx * 120);
+            });
+
+        })();
+    </script>
 </body>
 </html>
