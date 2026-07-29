@@ -1,0 +1,152 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Personalizados */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #0D0D0D;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 15pt;
+    color:#F2F2F2;
+}
+
+h2 {
+    margin-top: 50px;
+    font-weight: 900;
+    
+    text-transform: uppercase;
+    font-size: 10pt;
+    color:#03A678;
+
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 10pt;
+    color: #BFBFBF;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin: 15px 0;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 15px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link-list a:hover {
+    background-color: #ffffff;
+    color:#02735E;
+}
+
+.profile-pic {
+   
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    border: 6px solid #ffffff; 
+    display: block;
+    margin: 0 auto 20px; 
+}
+
+/* Estilos dos Botões com Animação de Pulo */
+.link-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    display: block;
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 10px 0; /* Espaçamento entre os botões */
+}
+
+/* Animação de Pulo */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    40% {
+        transform: translateY(-10px); /* Pulo para cima */
+    }
+    60% {
+        transform: translateY(-5px); /* Pulo para cima menor */
+    }
+}
+
+/* Aplicação da Animação ao Passar o Mouse */
+.link-list a:hover {
+    animation: bounce 1s;
+}
+
+.projetinhos {
+    list-style: none;
+    padding: 0;
+}
+
+.projetinhos li {
+    margin: 15px 0;
+}
+
+.projetinhos a {
+    text-decoration: none;
+    color: #03A678;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: 2px solid #03A678;
+    border-radius: 8px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.projetinhos a:hover {
+    background-color: #F2F2F2;
+    color:#0D0D0D;
+}
+
+.projetinhos h1:hover {
+    color: #F27405;
+}
